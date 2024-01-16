@@ -1,0 +1,13 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.trashHover:hover {
+	.trashMouseOut {
+		opacity: 100;
+		animation-duration: 2s;
+		transition: 0.5;
+	}
+}
