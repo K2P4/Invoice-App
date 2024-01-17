@@ -36,15 +36,15 @@ const Add = () => {
 	};
 
 	return (
-		<div className="flex  align-middle gap-4 items-center">
+		<div className="flex align-middle items-center gap-2 mx-6 md:mx-0 sm:my-0 md:my-0 sm:mx-0">
 			<div>
-				<label htmlFor="select" className="font-bold">
+				<label htmlFor="select" className="font-bold text-md sm:text-lg md:text-lg">
 					Select Your Product
 				</label>
 				<select
 					name="App"
 					ref={idRef}
-					className="w-full  mt-2 border border-gray-300 px-2 py-1 text-black text-lg rounded-md "
+					className="w-full  mt-2 border border-gray-300 px-1 py-1 text-black text-sm rounded-md sm:px-2 sm:text-lg  "
 					id="">
 					{product.map(({ id, name }) => (
 						<option key={id} value={id}>
@@ -54,9 +54,9 @@ const Add = () => {
 				</select>
 			</div>
 
-			<div className="flex align-middle items-center gap-3">
+			<div className="flex align-middle items-center gap-2 sm:gap-3 ">
 				<div className="">
-					<label htmlFor="select" className="font-bold">
+					<label htmlFor="select" className="font-bold  ">
 						Quantity
 					</label>
 
@@ -69,7 +69,7 @@ const Add = () => {
 
 				<button
 					onClick={addRecord}
-					className="bg-blue-700 hover:bg-blue-600 duration-100 active:scale-75    px-7 cursor-pointer select-none text-white text-md font-bold py-5 rounded-md">
+					className="bg-blue-700 hover:bg-blue-600 duration-100 active:scale-75    px-6 cursor-pointer select-none text-white text-sm font-bold py-5 rounded-md  sm:py-7 sm:px-7 sm:text-md">
 					Buy
 				</button>
 			</div>

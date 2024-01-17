@@ -10,27 +10,31 @@ const TotalProducts = () => {
 
 	return (
 		<div>
-			<div className="table w-full my-10">
-				<tr className="bg-gray-300   rounded-sm   text-black font-medium  ">
-					<th className="px-4 py-3">#</th>
-					<th className="px-4 py-3">PRODUCT NAME</th>
-					<th className="px-4 py-3">PRICE</th>
-					<th className="px-4 py-3">QUANTITY</th>
-					<th className="px-4 py-3">COST</th>
+			<div className="table w-full my-6 sm:my-10 ">
+				<tr className="bg-gray-300   rounded-sm  text-sm   text-black font-bold  sm:text-lg ">
+					<th className="px-1 py-1  sm:px-4 sm:py-3">#</th>
+					<th className="px-1 py-1  sm:px-4 sm:py-3">PRODUCT NAME</th>
+					<th className=" px-1 py-1 sm:px-4 sm:py-3">PRICE</th>
+					<th className="px-1 py-1  sm:px-4 sm:py-3">QUANTITY</th>
+					<th className=" px-1 py-1 sm:px-4 sm:py-3">COST</th>
 				</tr>
 
-				<tbody className={`text-lg text-black-500 shadow-lg  `}>
+				<tbody className={`text-sm text-black-500 shadow-lg  sm:text-lg `}>
 					{records.map(({ idNo, id, name, price, quanity, cost }) => {
 						return (
 							<tr
 								key={id}
 								className={` select-none cursor-pointer trashHover hover:bg-blue-300 duration-200 scale-1 border border-s-0 border-e-0 border-b-gray-400  `}>
-								<td className="  px-3 py-2 text-center">{idNo}</td>
-								<td className=" px-3 py-2 text-center">{name}</td>
-								<td className="text-gray-600  text-center">
+								<td className="px-1 py-1 sm:px-3  sm:py-2 text-center">
+									{idNo}
+								</td>
+								<td className="px-1 py-1 sm:px-3 sm:py-2 text-center">
+									{name}
+								</td>
+								<td className="text-gray-600 text-center">
 									{price.toFixed(2)}
 								</td>
-								<td className="text-gray-600  select-none   text-center">
+								<td className="text-gray-600  select-none text-center ">
 									{quanity}
 
 									<svg
@@ -40,7 +44,7 @@ const TotalProducts = () => {
 										viewBox="0 0 24 24"
 										strokeWidth={1.5}
 										stroke="currentColor"
-										className="w-6 opacity-0 trashMouseOut ms-5 animate animate__bounceIn  text-blue-700 float-start h-6">
+										className="w-4 h-4 me-2 opacity-0 trashMouseOut ms-3 animate animate__bounceIn  text-blue-700 float-start sm:h-6 sm:w-6  sm:ms-4 ">
 										<path
 											strokeLinecap="round"
 											strokeLinejoin="round"
@@ -55,7 +59,7 @@ const TotalProducts = () => {
 										viewBox="0 0 24 24"
 										strokeWidth={1.5}
 										stroke="currentColor"
-										className="w-6 animate trashMouseOut animate__bounceIn opacity-0  text-blue-700  me-5 float-end h-6">
+										className="w-5 ms-2 h-4   animate trashMouseOut animate__bounceIn opacity-0  text-blue-700 float-end  sm:w-6 sm:h-6 sm:me-4 ">
 										<path
 											strokeLinecap="round"
 											strokeLinejoin="round"
@@ -91,7 +95,7 @@ const TotalProducts = () => {
 
 				<tr
 					key={Date.now()}
-					className={`trashHover text-lg ${
+					className={`trashHover text-sm sm:text-lg ${
 						!toggle && "hidden"
 					} hover:bg-blue-300 duration-200 scale-1 text-black text-center`}>
 					<td className="text-gray-600  px-3 py-2 text-center" colSpan={4}>

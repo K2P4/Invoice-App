@@ -8,10 +8,14 @@ import Footer from "./Footer";
 const Heading = () => {
 	return (
 		<div className="">
-			<div className="my-10 flex align-middle items-center justify-between">
-				<div className="">
-					<h1 className=" font-bold text-2xl ">KOP Solutions</h1>
-					<h3 className="text-xl font-medium text-gray-500  ">Invoice App</h3>
+			<div className=" flex align-middle items-center  justify-between my-4  mx-6 sm:my-10 sm:mx-0 ">
+				<div className="mb-3 sm:mb-0 md:mb-0">
+					<h2 className="font-bold text-sm  md:text-2xl sm:text-2xl  ">
+						KOP Solutions
+					</h2>
+					<h3 className="font-medium text-gray-500 text-sm sm:text-xl lg:text-xl  md:text-xl ">
+						Invoice App
+					</h3>
 				</div>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +23,7 @@ const Heading = () => {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="w-9 h-9">
+					className="h-7 w-7 sm:h-11 sm:w-11  ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"
