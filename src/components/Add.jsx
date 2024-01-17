@@ -44,7 +44,7 @@ const Add = () => {
 				<select
 					name="App"
 					ref={idRef}
-					className="w-full  mt-2 border border-gray-300 px-1 py-1 text-black text-sm rounded-md sm:px-2  sm:text-lg  "
+					className="w-full  mt-2 border border-gray-300 px-1 py-2 text-black text-sm rounded-md sm:px-2  sm:text-lg  "
 					id="">
 					{product.map(({ id, name }) => (
 						<option key={id} value={id}>
