@@ -10,7 +10,7 @@ const Heading = () => {
 		<div className="">
 			<div className=" flex align-middle items-center  justify-between my-4  mx-6 sm:my-10 sm:mx-0 ">
 				<div className="mb-3 sm:mb-0 md:mb-0">
-					<h2 className="font-bold text-sm  md:text-2xl sm:text-2xl  ">
+					<h2 className="font-bold text-md  md:text-2xl sm:text-2xl  ">
 						KOP Solutions
 					</h2>
 					<h3 className="font-medium text-gray-500 text-sm sm:text-xl lg:text-xl  md:text-xl ">
@@ -23,7 +23,7 @@ const Heading = () => {
 					viewBox="0 0 24 24"
 					strokeWidth={1.5}
 					stroke="currentColor"
-					className="h-7 w-7 sm:h-11 sm:w-11  ">
+					className="h-8 w-8 sm:h-11 sm:w-11  ">
 					<path
 						strokeLinecap="round"
 						strokeLinejoin="round"
