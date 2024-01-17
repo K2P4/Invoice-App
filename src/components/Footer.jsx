@@ -22,6 +22,8 @@ const Footer = () => {
 					className="text-white rounded-lg font-sans font-medium hover:bg-blue-600 duration-75    bg-blue-700 px-2 py-1  text-md sm:px-3 sm:py-2  ">
 					Print
 				</button>
+
+				
 			</div>
 		</div>
 	);
